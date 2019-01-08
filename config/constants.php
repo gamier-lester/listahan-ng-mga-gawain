@@ -1,9 +1,9 @@
 <?php
 	//Database Credentials
-	define("DB_USER", "root");
-	define("DB_PWORD", "");
-	define("DB_NAME", "todo_app");
-	define("SERVER_NAME", "localhost");
+	define("DB_USER", "juancho");
+	define("DB_PWORD", "foreverinlov3");
+	define("DB_NAME", "todoapponetwo");
+	define("SERVER_NAME", "db4free.net");
 
 	//Paths
 	$url_path = "/batch19/mod08-sandbox/todoApp/";
