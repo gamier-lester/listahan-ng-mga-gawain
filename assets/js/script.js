@@ -5,7 +5,7 @@ $("#addTask").on("click", function(event) {
 	var taskName = $("#taskName").val();
 
 	$.ajax({
-		url: "/batch19/mod08-sandbox/todoApp/controllers/add_task.php",
+		url: "../../controllers/add_task.php",
 		type: "POST",
 		data: {
 			taskName: taskName
@@ -29,7 +29,7 @@ $(document).ready(function() {
 	// $("#table-body").
 
 	$.ajax({
-		url: "/batch19/mod08-sandbox/todoApp/controllers/fill_table.php",
+		url: "../../controllers/fill_table.php",
 		type: "POST",
 		data: {},
 		success: function(tabledata) {
@@ -91,7 +91,7 @@ function testMe () {
 		// console.log(thisId);
 
 		$.ajax({
-			url: "/batch19/mod08-sandbox/todoApp/controllers/remove_task.php",
+			url: "../../controllers/remove_task.php",
 			type: "POST",
 			data: {
 				taskId: thisId
@@ -108,7 +108,7 @@ function refreshData() {
 	$("#table-body").empty();
 
 	$.ajax({
-		url: "/batch19/mod08-sandbox/todoApp/controllers/fill_table.php",
+		url: "../../controllers/fill_table.php",
 		type: "POST",
 		data: {},
 		success: function(tabledata) {
